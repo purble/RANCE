@@ -28,6 +28,7 @@ The table below provides results of the two models trained on each of the folds 
 
 
 |             |               |  Model_Fold1dev_Fold2test  |  Model_Fold1test_Fold2eval  | Average Performance |
+|-------------|---------------|----------------------------|-----------------------------|---------------------|
 |  Re-Rerank  | NDCG@10       |                            |                             |                     |
 |             | MRR           |                            |                             |                     |
 |             | Recall        |                            |                             |                     |
