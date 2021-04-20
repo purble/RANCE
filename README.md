@@ -20,7 +20,7 @@ We could not use a part of the training dataset as validation dataset on account
 
 ## RANCE-PRFS-DEM
 
-<u>Note<\u>: Switch to RANCE-PRFS-DEM branch of this repository for the code.
+**Note**: Switch to RANCE-PRFS-DEM branch of this repository for the code.
   
 We have modified original [ANCE](https://github.com/microsoft/ANCE) code to sample negatives as per our proposed methodology. So, the directory structure and methodology to run the code remains the same, except that during each ANN-data generation step we sample negatives with the help of one of the folds as validation dataset and evluate the trained model on the other fold. The final scores are obtained by averaging the performance of two models evaluated on different test folds.
 
