@@ -27,7 +27,7 @@ We have modified original [ANCE](https://github.com/microsoft/ANCE) code to samp
 The table below provides results of the two models trained on each of the folds and then evaluated on the other folds. The header of the table has an embedded hyperlink that can be used to download our trained models.
 
 
-|             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  |  Model_Fold1test_Fold2dev   | Average Performance |
+|             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
 | *Re-Rerank* | NDCG@10       |                            |                             |                     |
 |             | MRR           |                            |                             |                     |
