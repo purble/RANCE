@@ -1,5 +1,7 @@
 # RANCE
 
+** Our code is built on top of the [ANCE](https://github.com/microsoft/ANCE) repository. So, please refer to it for detailed instructions regarding generating pre-processed datasets, running, and evaluating the code.
+
 ## Dataset
 
 Download and preprocess the TREC 2019 Deep Learning (DL) Track dataset as specified in original [ANCE](https://github.com/microsoft/ANCE) repository and split the test queries into two-folds, fold1 and fold2, at random. For us, the division of the test queries resulted in the following two-folds in terms of test query ids of the TREC 2019 Deep Learning (DL) Track dataset-
@@ -20,23 +22,36 @@ We could not use a part of the training dataset as validation dataset on account
 
 ## RANCE-PRFS-DEM
 
-**Note**: Switch to RANCE-PRFS-DEM branch of this repository for the code.
+**Note**: The code is in the code/RANCE-PRFS-DEM/ folder of this repository.
   
-We have modified original [ANCE](https://github.com/microsoft/ANCE) code to sample negatives as per our proposed methodology. So, the directory structure and methodology to run the code remains the same, except that during each ANN-data generation step we sample negatives with the help of one of the folds as validation dataset and evluate the trained model on the other fold. The final scores are obtained by averaging the performance of two models evaluated on different test folds.
+We have modified original [ANCE](https://github.com/microsoft/ANCE) code to sample negatives as per our proposed methodology. So, the directory structure and methodology to run the code remains the same, except that during each ANN-data generation step we sample negatives with the help of one of the folds as validation dataset and evluate the trained model on the other fold. The final scores are obtained by averaging the performance of two models evaluated on different test folds. We mainly modified the sampling strategy in the *code/RANCE-PRFS-DEM/drivers/run_ann_data_gen.py* file.
 
-The table below provides results of the two models trained on each of the folds and then evaluated on the other folds. The header of the table has an embedded hyperlink that can be used to download our trained models.
+The tables below provides results of the two models trained on each of the folds and then evaluated on the other fold. Hyperlinks embedding in the header of the tables can be used to download our trained models.
 
+*Passage*
 
 |             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
-| *Re-Rerank* | NDCG@10       |                            |                             |                     |
-|             | MRR           |                            |                             |                     |
-|             | Recall        |                            |                             |                     |
-| *Retreival* | NDCG@10       |                            |                             |                     |
-|             | MRR           |                            |                             |                     |
-|             | Recall        |                            |                             |                     |
+| *Re-Rerank* | NDCG          |          0.672             |          0.689              |        0.681        |
+|             | Recall        |          0.619             |          0.734              |        0.676        |
+|             | MRR           |          1.0               |          0.932              |        0.966        |
+| *Retreival* | NDCG          |          0.661             |          0.667              |        0.664        |
+|             | Recall        |          0.621             |          0.728              |        0.674        |
+|             | MRR           |          0.931             |          0.939              |        0.935        |
 
-## RANCE-PRFS
 
-## RANCE
+*Document*
+
+|             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
+|-------------|---------------|----------------------------|-----------------------------|---------------------|
+| *Re-Rerank* | NDCG          |          0.704             |          0.655              |        0.68         |
+|             | Recall        |          0.334             |          0.297              |        0.315        |
+|             | MRR           |          0.922             |          0.918              |        0.92         |
+| *Retreival* | NDCG          |          0.652             |          0.632              |        0.642        |
+|             | Recall        |          0.295             |          0.293              |        0.294        |
+|             | MRR           |          0.921             |          0.913              |        0.917        |
+
+
+## RANCE-PRFS and RANCE
+
 
