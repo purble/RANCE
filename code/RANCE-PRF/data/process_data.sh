@@ -1,5 +1,5 @@
-raw_data_dir=/home/prafullpraka/scratch/mst/ANCE/data/raw_data
-preprocessed_data_dir=/home/prafullpraka/scratch/mst/ANCE/data/preprocessed_data/document/roberta_base/firstp
+raw_data_dir=
+preprocessed_data_dir=
 
 python msmarco_data.py 
 --data_dir $raw_data_dir \

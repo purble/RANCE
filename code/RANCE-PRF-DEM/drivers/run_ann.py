@@ -343,7 +343,6 @@ def train(args, model, tokenizer, query_cache, passage_cache):
                         print("Waiting for new ann_data. Sleeping for 1hr!!")
                         time.sleep(3600)
                         ann_no, ann_path, ndcg_json = get_latest_ann_data(args.ann_dir)
-                    print("Found new ann_data!!")
 
             dist.barrier()
 

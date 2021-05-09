@@ -535,7 +535,6 @@ def compute_BM25_score(n, f, qf, r, N, dl, avdl):
     first = math.log((((r + 0.5) / (R - r + 0.5)) / ((n - r + 0.5) / (N - n - R + r + 0.5))) + 1.0)
     second = ((k1 + 1) * f) / (K + f)
     third = ((k2 + 1) * qf) / (k2 + qf)
-    # print("fst: ", first, second, third)
     return first * second * third
 
 

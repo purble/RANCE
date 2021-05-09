@@ -2,7 +2,6 @@ import sys
 import os
 import torch
 sys.path += ['../']
-sys.path += ['/home/prafullpraka/Work/mst/ANCE']
 import gzip
 import pickle
 from utils.util import pad_input_ids, multi_file_process, numbered_byte_file_generator, EmbeddingCache

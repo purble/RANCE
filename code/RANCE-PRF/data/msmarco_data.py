@@ -2,7 +2,6 @@ import sys
 import os
 import torch
 sys.path += ['../']
-sys.path += ['/home/prafullpraka/Work/mst/ANCE/exp_mst/negS_static/testDistGainFn/code/']
 import gzip
 import pickle
 from utils.util import pad_input_ids, multi_file_process, numbered_byte_file_generator, EmbeddingCache
@@ -347,11 +346,6 @@ def GetTripletTrainingDataProcessingFn(args, query_cache, passage_cache):
         neg_all_data = line_arr[2].split(',')
         neg_pids = [int(neg_data.split(":")[0]) for neg_data in neg_all_data]
         neg_scores = [float(neg_data.split(":")[1]) for neg_data in neg_all_data]
-
-        # print("qid: ", qid)
-        # print("pos_pid: ", pos_pid, "pos_score: ", pos_score)
-        # print("neg_pids: ", neg_pids)
-        # print("neg_scores: ", neg_scores)
 
         all_input_ids_a = []
         all_attention_mask_a = []

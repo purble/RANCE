@@ -26,10 +26,8 @@ def getPassageData(checkpoint_path, checkpoint):
     
     for i in range(8): ############### Change 4 according to number of GPUs
         try:
-            print(i)
             with open(checkpoint_path + "passage_"+str(checkpoint)+"__emb_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                 passage_embedding_data.append(pickle.load(handle))
-            print(i)
             with open(checkpoint_path + "passage_"+str(checkpoint)+"__embid_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                 passage_embedding2id_data.append(pickle.load(handle))
         except:
@@ -53,26 +51,20 @@ def getQueryData(checkpoint_path, checkpoint, validFold):
     for i in range(8): ############### Change according to number of GPUs
         try:
             if os.path.exists(checkpoint_path + "dev_query_"+str(checkpoint)+"__emb_p__data_obj_"+str(i)+".pb"):
-                print(i)
                 with open(checkpoint_path + "dev_query_"+str(checkpoint)+"__emb_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                     valid_query_embedding_data.append(pickle.load(handle))
-                print(i)
                 with open(checkpoint_path + "dev_query_"+str(checkpoint)+"__embid_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                     valid_query_embedding2id_data.append(pickle.load(handle))
             if validFold == 1:
                 if os.path.exists(checkpoint_path + "test_query_2_"+str(checkpoint)+"__emb_p__data_obj_"+str(i)+".pb"):
-                    print(i)
                     with open(checkpoint_path + "test_query_2_"+str(checkpoint)+"__emb_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                         test_query_embedding_data.append(pickle.load(handle))
-                    print(i)
                     with open(checkpoint_path + "test_query_2_"+str(checkpoint)+"__embid_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                         test_query_embedding2id_data.append(pickle.load(handle))
             else:
                 if os.path.exists(checkpoint_path + "test_query_1_"+str(checkpoint)+"__emb_p__data_obj_"+str(i)+".pb"):
-                    print(i)
                     with open(checkpoint_path + "test_query_1_"+str(checkpoint)+"__emb_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                         test_query_embedding_data.append(pickle.load(handle))
-                    print(i)
                     with open(checkpoint_path + "test_query_1_"+str(checkpoint)+"__embid_p__data_obj_"+str(i)+".pb", 'rb') as handle:
                         test_query_embedding2id_data.append(pickle.load(handle))
         except:
@@ -227,9 +219,6 @@ def rerankWithResidualLearningScore(I_nearest_neighbor, rerankTopN, query_embedd
         selected_ann_idx = top_ann_pid[:rerankTopN] # Need to select topN since for some of the chunks the embeddings might be garbage, but no garbage in topN coz..
         rank = 0
         
-        # print(top_ann_pid.shape, selected_ann_idx.shape) # 400, 100
-        # top_ann_pid.sort()
-        # print(top_ann_pid) # Consecutive chunks of a particular doc appear at interal of batch_size during building ANN-index
         residual_scores = {}
         scores = []
         for ix, emb_idx in enumerate(selected_ann_idx):
