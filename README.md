@@ -26,7 +26,7 @@ We could not use a part of the training dataset as validation dataset on account
 
 ## RANCE-PRF-DEM
 
-**Note**: The code is in the code/RANCE-PRF-DEM/ folder of this repository.
+**Note**: The code is in the *code/RANCE-PRF-DEM/* folder of this repository.
   
 We have modified original [ANCE](https://github.com/microsoft/ANCE) code to sample negatives as per our proposed methodology. So, the directory structure and methodology to run the code remains the same, except that during each ANN-data generation step we sample negatives with the help of one of the folds as validation dataset and evluate the trained model on the other fold. The final scores are obtained by averaging the performance of two models evaluated on different test folds. We mainly modified the sampling strategy in the *code/RANCE-PRFS-DEM/drivers/run_ann_data_gen.py* file.
 
@@ -58,7 +58,7 @@ The tables below provides results of the two models trained on each of the folds
 
 ## RANCE-PRF and RANCE
 
-**Note**: The code is in the code/RANCE-PRF/ folder of this repository.
+**Note**: The code is in the *code/RANCE-PRF/* folder of this repository.
 
 **RANCE-PRF**
 
