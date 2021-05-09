@@ -67,7 +67,7 @@ For DEM implementation on top of [ANCE](https://github.com/microsoft/ANCE) code,
 
 **RANCE**
 
-We obtain final scores for our proposed RANCE method using a model trained using RANCE-PRF strategy, and add PRF during inference for both re-ranking and retrieval tasks.
+We obtain final scores for our proposed RANCE method using a model trained using RANCE-PRF strategy, and add PRF during evaluation for both re-ranking and retrieval tasks.
 
 The tables below provides results of the two models trained on each of the folds using RANCE-PRF strategy and then evaluated on the other fold after incorporating PRF. Hyperlinks embedding in the header of the tables can be used to download our trained models.
 
