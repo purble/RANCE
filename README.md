@@ -1,4 +1,8 @@
-# RANCE
+# Learning Robust Dense Retrieval Modelsfrom Incomplete Relevance Labels
+
+*Prafull Prakash, Julian Killingback, and Hamed Zamani*
+
+Recent deployment of efficient billion-scale approximate nearestneighbor (ANN) search algorithms on GPUs has motivated infor-mation retrieval researchers to develop neural ranking models thatlearn low-dimensional dense representations for queries and docu-ments and use ANN search for retrieval. However, optimizing thesedense retrieval models poses several challenges including negativesampling for (pair-wise) training. A recent model, called ANCE, suc-cessfully uses dynamic negative sampling using ANN search. Thispaper improves upon ANCE by proposing a robust negative sam-pling strategy for scenarios where the training data lacks completerelevance annotations. This is of particular importance as obtain-ing large-scale training data with complete relevance judgment isextremely expensive. Our model uses a small validation set withcomplete relevance judgments to accurately estimate a negativesampling distribution for dense retrieval models. We also explorepseudo-relevance feedback solutions for negative sampling duringtraining and model penalization for making “easy-to-avoid” mis-takes using a lexical matching signal. Our experiments of the TRECDeep Learning Track benchmarks demonstrate the effectiveness ofour solutions.
 
 ** Our code is built on top of the [ANCE](https://github.com/microsoft/ANCE) repository. So, please refer to it for detailed instructions regarding generating pre-processed datasets, running, and evaluating the code.
 
