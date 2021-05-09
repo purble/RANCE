@@ -79,21 +79,21 @@ The tables below provides results of the two models trained on each of the folds
 
 |             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
-| *Re-Rerank* | NDCG          |          0.708             |          0.696              |        0.702        |
-|             | Recall        |          0.734             |          0.619              |        0.676        |
-|             | MRR           |          0.930             |          0.976              |        0.954        |
-| *Retreival* | NDCG          |          0.690             |          0.700              |        0.695        |
-|             | Recall        |          0.767             |          0.626              |        0.697        |
-|             | MRR           |          0.878             |          1.0                |        0.939        |
+| *Re-Rerank* | NDCG          |          0.696             |          0.708              |        0.702        |
+|             | Recall        |          0.619             |          0.734              |        0.676        |
+|             | MRR           |          0.976             |          0.931              |        0.954        |
+| *Retreival* | NDCG          |          0.701             |          0.690              |        0.695        |
+|             | Recall        |          0.626             |          0.768              |        0.697        |
+|             | MRR           |          1.0               |          0.878              |        0.939        |
 
 
 *Document*
 
 |             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
-| *Re-Rerank* | NDCG          |          0.699             |          0.704              |        0.702        |
-|             | Recall        |          0.299             |          0.350              |        0.325        |
-|             | MRR           |          0.915             |          0.901              |        0.908        |
-| *Retreival* | NDCG          |          0.663             |          0.691              |        0.677        |
-|             | Recall        |          0.320             |          0.293              |        0.307        |
-|             | MRR           |          0.911             |          0.892              |        0.901        |
+| *Re-Rerank* | NDCG          |          0.704             |          0.699              |        0.702        |
+|             | Recall        |          0.350             |          0.299              |        0.325        |
+|             | MRR           |          0.901             |          0.915              |        0.908        |
+| *Retreival* | NDCG          |          0.695             |          0.663              |        0.679        |
+|             | Recall        |          0.308             |          0.320              |        0.314        |
+|             | MRR           |          0.905             |          0.911              |        0.908        |
