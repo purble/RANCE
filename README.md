@@ -1,4 +1,4 @@
-# [Learning Robust Dense Retrieval Modelsfrom Incomplete Relevance Labels](https://github.com/purble/RANCE_practice)
+# [Learning Robust Dense Retrieval Modelsfrom Incomplete Relevance Labels](https://github.com/purble/RANCE/)
 
 *Prafull Prakash, Julian Killingback, and Hamed Zamani*
 
