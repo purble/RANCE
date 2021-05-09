@@ -34,7 +34,7 @@ The tables below provides results of the two models trained on each of the folds
 
 *Passage*
 
-|             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
+|             |               | [Model_Fold1dev_Fold2test](https://drive.google.com/file/d/1ZuTPBBEvJ9XijPWQ1-_fNyehlsekN-LW/view?usp=sharing)  | [Model_Fold1test_Fold2dev](https://drive.google.com/file/d/12cEK3akE0C8u6AzmTPn_aK4AuSVFwk9F/view?usp=sharing)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
 | *Re-Rerank* | NDCG          |          0.672             |          0.689              |        0.681        |
 |             | Recall        |          0.619             |          0.734              |        0.676        |
@@ -46,7 +46,7 @@ The tables below provides results of the two models trained on each of the folds
 
 *Document*
 
-|             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
+|             |               | [Model_Fold1dev_Fold2test](https://drive.google.com/file/d/1wTNbxtv9k0DaZ_8FEIMuiBkk9Ajjkxcf/view?usp=sharing)  | [Model_Fold1test_Fold2dev](https://drive.google.com/file/d/1NxvCTQQoSN_MOXSvSqT2T-WTtFL-kfEV/view?usp=sharing)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
 | *Re-Rerank* | NDCG          |          0.704             |          0.655              |        0.68         |
 |             | Recall        |          0.334             |          0.297              |        0.315        |
@@ -77,7 +77,7 @@ The tables below provides results of the two models trained on each of the folds
 
 *Passage*
 
-|             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
+|             |               | [Model_Fold1dev_Fold2test](https://drive.google.com/file/d/19TaZmR-6k8cg0Tsuat0C715r0GOo35Mh/view?usp=sharing)  | [Model_Fold1test_Fold2dev](https://drive.google.com/file/d/1X4siRaRO2fgWNhch39jr4txq-FpbGv5M/view?usp=sharing)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
 | *Re-Rerank* | NDCG          |          0.696             |          0.708              |        0.702        |
 |             | Recall        |          0.619             |          0.734              |        0.676        |
@@ -89,7 +89,7 @@ The tables below provides results of the two models trained on each of the folds
 
 *Document*
 
-|             |               | [Model_Fold1dev_Fold2test](https://github.com/microsoft/ANCE)  | [Model_Fold1test_Fold2dev](https://github.com/microsoft/ANCE)  | Average Performance |
+|             |               | [Model_Fold1dev_Fold2test](https://drive.google.com/file/d/1wUi41ZKKroVYHRRAF6L_dfbdg_y1Sexm/view?usp=sharing)  | [Model_Fold1test_Fold2dev](https://drive.google.com/file/d/1CYR3pQsmJ4bCfHZILvT8Lbn6JxeflL0L/view?usp=sharing)  | Average Performance |
 |-------------|---------------|----------------------------|-----------------------------|---------------------|
 | *Re-Rerank* | NDCG          |          0.704             |          0.699              |        0.702        |
 |             | Recall        |          0.350             |          0.299              |        0.325        |
